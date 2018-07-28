@@ -56,7 +56,9 @@ class BooksApp extends Component {
               <h1>MyReads</h1>
             </div>
             <div className="list-books-content">
-              <Bookshelf />
+              <Bookshelf
+								books={this.state.books}
+							/>
             </div>
             <div className="open-search">
               <a onClick={() => this.setState({ showSearchPage: true })}>Add a book</a>
