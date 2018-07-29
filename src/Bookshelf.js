@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import BookshelfChanger from './BookshelfChanger.js'
-import Book from './Book.js'
+import BookshelfChanger from './BookshelfChanger'
+import Book from './Book'
 
 class Bookshelf extends Component {
 
