@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Book from './Book'
 import BookshelfTitle from './BookshelfTitle'
 
-class Bookshelf extends Component {
+class Bookshelves extends Component {
 
 	render() {
 		return (
@@ -90,4 +90,4 @@ class Bookshelf extends Component {
 	}
 }
 
-export default Bookshelf
+export default Bookshelves
