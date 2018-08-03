@@ -20,13 +20,13 @@ class BooksApp extends Component {
 	/**
 	 * Fetch all books from the BooksAPI asynchronously.
 	 */
-	componentDidMount() {
+	componentDidMount = () => {
 		BooksAPI.getAll().then((books) => {
 			this.setState({ books })
 		})
   }
   
-  openSearch() {
+  openSearch = () => {
     this.setState({ showSearchPage: true })
   }
 
