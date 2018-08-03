@@ -11,6 +11,7 @@ class Book extends Component {
 					<BookshelfChanger
 						singleBook={this.props.singleBook}
 						changeShelf={this.props.changeShelf}
+						currentShelf={this.props.currentShelf}
 					/>
 				</div>
 				<div className="book-title">{this.props.singleBook.title}</div>
