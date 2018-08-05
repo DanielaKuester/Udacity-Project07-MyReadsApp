@@ -16,9 +16,7 @@ class Main extends Component {
                 changeShelf={this.props.changeShelf}
               />
             </div>
-              <SearchOpen
-                openSearch={this.props.openSearch}
-              />
+              <SearchOpen />
           </div>
         )
     }
