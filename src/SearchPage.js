@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import escapeRegExp from 'escape-string-regexp'
-import sortBy from 'sort-by'
+//import escapeRegExp from 'escape-string-regexp'
+//import sortBy from 'sort-by'
 import * as BooksAPI from './BooksAPI'
 import Book from './Book'
 
@@ -103,6 +103,8 @@ class SearchPage extends Component {
 						    <li key={searchedBook.id}>
 							    <Book
                                     singleBook={searchedBook}
+                                    changeShelf={this.props.changeShelf}
+                                    selectedShelf={"none"}
                                 />
 						    </li>
                         ))

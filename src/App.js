@@ -59,6 +59,7 @@ class BooksApp extends Component {
         {this.state.showSearchPage ? (
           <SearchPage
             closeSearch={this.closeSearch.bind(this)}
+            changeShelf={this.changeShelf}
           />
         ) : (
           <Main
