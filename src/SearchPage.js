@@ -58,17 +58,6 @@ class SearchPage extends Component {
     }
 
     render() {
-        {/*
-        let showingBooks
-		if (this.state.query) {
-			const match = new RegExp(escapeRegExp((query), 'i'))
-			showingBooks = searchedBooks.filter((searchedBooks) => match.test(contact.name))
-		} else {
-			showingBooks = searchedBooks
-		}
-
-        showingBooks.sort(sortBy('name')) */}
-
         return(
             <div className="search-books">
                 <div className="search-books-bar">
