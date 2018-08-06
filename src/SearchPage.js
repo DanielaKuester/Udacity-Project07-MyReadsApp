@@ -94,7 +94,7 @@ class SearchPage extends Component {
                 <div className="search-books-results">
                     <ol className="books-grid">
                         {/*
-                        I adapted the code of Maeva's study jam (2:28:00-2:36
+                        I adapted the code of Maeva's study jam (2:28:00-2:38:40
                         https://youtu.be/i6L2jLHV9j8 ) to the needs of my project. 
                         I have to admit that I basically took her code to map through
                         the books-array and only adapted it to my components and variables.
