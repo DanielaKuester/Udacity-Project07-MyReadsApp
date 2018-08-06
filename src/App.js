@@ -20,13 +20,13 @@ class BooksApp extends Component {
     bookTitleClass: ["bookshelf-title currentlyReading", "bookshelf-title wantToRead", "bookshelf-title read"]
   }
 
-	/**
-	 * Fetch all books from the BooksAPI asynchronously.
-	 */
-	componentDidMount = () => {
-		BooksAPI.getAll().then((books) => {
-			this.setState({ books })
-		})
+  /**
+   * Fetch all books from the BooksAPI asynchronously.
+   */
+  componentDidMount = () => {
+    BooksAPI.getAll().then((books) => {
+      this.setState({ books })
+    })
   }
   
   /**
@@ -50,19 +50,19 @@ class BooksApp extends Component {
     return (
       <div className="app">
         <Route exact path="/" render={() => (
-					<Main
+          <Main
             books={this.state.books}
             bookTitleClass={this.state.bookTitleClass}
             changeShelf={this.changeShelf}
           />
-				)}/>
+        )}/>
         <Route path="/search" render={() => (
-					<SearchPage
+          <SearchPage
             books={this.state.books}
             changeShelf={this.changeShelf}
             singleBook={this.props.singleBook}
           />
-				)}/>
+        )}/>
       </div>
     )
   }

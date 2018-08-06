@@ -116,12 +116,12 @@ class SearchPage extends Component {
                             
                             return (
                                 <li key={searchedBook.id}>
-							        <Book
+                                    <Book
                                         singleBook={searchedBook}
                                         changeShelf={this.props.changeShelf}
                                         selectedShelf={searchShelf}
                                     />
-						        </li>
+                                </li>
                             )
                         })
                         }
