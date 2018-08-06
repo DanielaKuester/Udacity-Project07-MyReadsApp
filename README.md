@@ -12,7 +12,7 @@ into the project directory.
 * **Clone the Repository:** Clone the repository with Git Bash to a directory of your choice: ```git clone https://github.com/DanielaKuester/Udacity-Project07-MyReadsApp/```.
 * install all project dependencies with `npm install`
 * start the development server with `npm start`
-* ater running `npm start`, the React App should open automatically in your browser. If it doesn't, open `localport:3000` in your Browser.
+* ater running `npm start`, the React App should open automatically in your browser. If it doesn't, open `localhost:3000` in your Browser.
 
 ## What You're Getting
 ```bash
