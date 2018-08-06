@@ -93,17 +93,29 @@ class SearchPage extends Component {
                 */}
                 <div className="search-books-results">
                     <ol className="books-grid">
+                        {/*
+                        I adapted the code of Maeva's study jam (2:28:00-2:36
+                        https://youtu.be/i6L2jLHV9j8 ) to the needs of my project. 
+                        I have to admit that I basically took her code to map through
+                        the books-array and only adapted it to my components and variables.
+                        I tried to rewrite the conditional as an if-else-statement
+                        (in an arrow function that takes curly braces), but I didn't succeed.
+                        If you have an advide on how to write this differently, I'm absolutely
+                        willing to change my code. Since the ternary operator is less code
+                        and a bit easier to understand, I will probably try to get used to it
+                        in the long run. A good explanation is in the React documentation section
+                        "Conditional Rendering" under the heading "Inline If-Else with
+                        Conditional Operator": https://reactjs.org/docs/conditional-rendering.html
+                        */}
                         {this.state.searchedBooks.map((searchedBook) => {
                             let searchShelf = "none";
 
-                            this.props.books.map((singleBook) => (
-                                this.props.books.map(singleBook => (
-                                    singleBook.id === searchedBook.id ?
-                                    searchShelf = singleBook.shelf :
-                                    ""
-                                ))
+                            this.props.books.map(singleBook => (
+                                singleBook.id === searchedBook.id ?
+                                searchShelf = singleBook.shelf :
+                                ""
                             ));
-
+                            
                             return (
                                 <li key={searchedBook.id}>
 							        <Book
